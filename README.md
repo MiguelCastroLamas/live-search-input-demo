@@ -1,10 +1,3 @@
-## TODO
-~~~
-* Improve BDD testing
-* Handle errors
-* Block events countries are loading
-~~~
-
 ## DEVELOPMENT TOOLS
 ~~~
 * OS:               Ubuntu 18.04.5 LTS
@@ -14,6 +7,13 @@
 * Docker:           Docker version 19.03.6, build 369ce74a3c
 * Docker Compose:   docker-compose version 1.21.2, build a133471
 * IDE:              Visual Studio Code
+~~~
+
+## TODO
+~~~
+* Improve BDD testing
+* Handle errors
+* Block events countries are loading
 ~~~
 
 ## INSTALL DEPENDENCES
