@@ -48,5 +48,5 @@ $ npm run build
 ~~~
 * Improve BDD testing
 * Handle errors
-* Block events countries are loading
+* Block events when countries are loading
 ~~~
