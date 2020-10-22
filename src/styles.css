@@ -1,0 +1,54 @@
+/* TAGS */
+app-live-search-input {
+    margin: 10px;
+    width: 50%;
+    max-width: 460px;
+    min-width: 150px;
+}
+
+/* FONT */
+body {
+    font-family: 'Montserrat';
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+
+::-webkit-input-placeholder {
+    font-family: 'Montserrat';
+}
+
+::-ms-input-placeholder {
+    font-family: 'Montserrat';
+}
+
+::-moz-placeholder {
+    font-family: 'Montserrat';
+}
+
+::-moz-placeholder {
+    font-family: 'Montserrat';
+}
+
+/* FLEX */
+.flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* GLOBAL */
+.margin-botom-5 {
+    margin-bottom: 5px;
+}

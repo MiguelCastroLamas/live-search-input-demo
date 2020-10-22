@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.0.0",
+  "configurations": [
+    {
+      "name": "UI Launch",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "ng serve dev docker",
+      "url": "http://localhost:4200/",
+      "sourceMapPathOverrides": {
+        "webpack:/*": "${webRoot}/*",
+        "/./*": "${webRoot}/*",
+        "/src/*": "${webRoot}/*",
+        "/*": "*",
+        "/./~/*": "${webRoot}/node_modules/*"
+      }
+    },
+    {
+      "name": "UI Launch (without Docker)",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "ng serve dev local",
+      "url": "http://localhost:4200/",
+      "sourceMapPathOverrides": {
+        "webpack:/*": "${webRoot}/*",
+        "/./*": "${webRoot}/*",
+        "/src/*": "${webRoot}/*",
+        "/*": "*",
+        "/./~/*": "${webRoot}/node_modules/*"
+      }
+    },
+  ]
+}

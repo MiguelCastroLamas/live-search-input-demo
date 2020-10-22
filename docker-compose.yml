@@ -1,0 +1,15 @@
+version: "3.5" # We use version 3.5 syntax
+services: # Here we define our service(s)
+  demo-dev-service: # The name of the service
+    container_name: live.search.input.demo.dev.container # Container name 
+    build:
+      context: . # Location of our Dockerfile
+      dockerfile: .docker/development.dockerfile
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./:/usr/share/app
+      - /app/node_modules/
+    ports:
+      - "4200:4200" # Port mapping
+    command: ["ng", "serve", "--host=0.0.0.0", "--watch", "--poll=2000"]

@@ -1,0 +1,7 @@
+<div class="flex flex-align-center flex-column">
+    <app-live-search-input class="flex flex-column" id="countries_input_search_component"
+        label="Encuentra los mejores países" [value]="countriesSearchInputValue" [(results)]="countries"
+        [loading]="loadingSelectedCountry" (changeCallback)="onCountriesInputChange($event)"
+        (selectedResultCallback)="onSelectCountry($event)" placeholder="Qué país buscas...">
+    </app-live-search-input>
+</div>

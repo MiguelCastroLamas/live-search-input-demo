@@ -1,0 +1,17 @@
+<label class="margin-botom-5" [for]="id">{{label}}</label>
+
+<div class="flex flex-align-center">
+    <input type="search" [id]="inputId" [placeholder]="placeholder" [(ngModel)]="value"
+        (ngModelChange)="onChangeInput($event)" spellcheck="false">
+    <button *ngIf="!loading" type="button" class="search-icon" (click)="onChangeInput(value)"></button>
+    <img *ngIf="loading" class="search-icon-loading_tmp" src="../../../../../assets/search-icon-loading.svg" alt>
+</div>
+
+<div *ngIf="results?.length > 0" class="flex flex-column flex-align-center border-radius-results">
+    <p *ngFor="let result of results" (click)="onSelectedResult(result)">
+        <span *ngFor="let item of result | keyvalue; let last = last;">
+            <span [innerHTML]="item.value | boldermatches:value"></span>
+            <span *ngIf="!last"> - </span>
+        </span>
+    </p>
+</div>
