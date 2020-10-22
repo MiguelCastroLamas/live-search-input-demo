@@ -9,13 +9,6 @@
 * IDE:              Visual Studio Code
 ~~~
 
-## TODO
-~~~
-* Improve BDD testing
-* Handle errors
-* Block events countries are loading
-~~~
-
 ## INSTALL DEPENDENCES
 ```sh
 # Run in the project root
@@ -50,3 +43,10 @@ $ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo
 ```sh
 $ npm run build
 ```
+
+## TODO
+~~~
+* Improve BDD testing
+* Handle errors
+* Block events countries are loading
+~~~
