@@ -14,8 +14,8 @@ export class BolderMatchesPipe implements PipeTransform {
    * @returns     string replaced in case of matches
    */
   transform(value: string, match: string): unknown {
-    const trim_match = match.trim();
-    const regex = new RegExp(`(${trim_match})`, 'ig');
+    const trimMatch = match.trim();
+    const regex = new RegExp(`(${trimMatch})`, 'ig');
     return value.replace(regex, '<b>$1</b>');
   }
 

@@ -14,9 +14,11 @@ export class LiveSearchComponent implements OnInit, OnChanges {
   @Input() loading: boolean;
   @Output() changeCallback = new EventEmitter<any>();
   @Output() selectedResultCallback = new EventEmitter<any>();
-  inputId = `${this.id}_input`
+  inputId: string;
 
-  constructor() { }
+  constructor() {
+    this.inputId = this.id ? `${this.id}_input` : 'live_search_input';
+  }
 
   ngOnInit(): void { }
 
